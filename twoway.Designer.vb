@@ -23,7 +23,6 @@ Partial Class Twoway
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Next1 = New System.Windows.Forms.Button()
         Me.Previous = New System.Windows.Forms.Button()
         Me.Add = New System.Windows.Forms.Button()
@@ -65,7 +64,6 @@ Partial Class Twoway
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -73,10 +71,6 @@ Partial Class Twoway
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'ErrorProvider1
-        '
-        Me.ErrorProvider1.ContainerControl = Me
         '
         'Next1
         '
@@ -522,7 +516,6 @@ Partial Class Twoway
         Me.MaximizeBox = False
         Me.Name = "Twoway"
         Me.Text = "Round Trip"
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
@@ -535,8 +528,6 @@ Partial Class Twoway
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents ErrorProvider1 As ErrorProvider
     Friend WithEvents GroupBox6 As GroupBox
     Friend WithEvents Next1 As Button
     Friend WithEvents Previous As Button
